@@ -1,0 +1,21 @@
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    &_first {
+        color: $light;
+        font-size: 80px;
+        line-height: 120px;
+    }
+    &_second {
+        font-size: 48px;
+        font-weight: 900;
+    }
+    &_third {
+        font-size: 18px;
+    }
+    &__icon {
+        font-weight: 300;
+        line-height: 80px;
+        font-size: 80px;
+    }
+}

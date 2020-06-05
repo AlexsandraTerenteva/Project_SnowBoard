@@ -1,0 +1,179 @@
+@media (max-width: 1200px) {
+    .container {
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+    .mountain {
+        background-position: right;
+        &__wrap {
+            max-width: 50%;
+        }
+    }
+    .footer {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .title_first {
+        font-size: 60px;
+        line-height: 1.4;
+    }
+    .title_second {
+        font-size: 36px;
+    }
+    .hero {
+       min-height: 648px;
+       background-position: right;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .title_first {
+        font-size: 50px;
+    }
+    .header {
+        .search-block {
+            .burger {
+                margin-left: 40px;
+                width: 100px;
+                height: 100px;
+                z-index: 5;
+                span {
+                    display: block;
+                    position: relative;
+                    margin: 50px auto;
+                    width: 50px;
+                    height: 2px;
+                    background-color: $light; 
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 50px;
+                        height: 2px;
+                        background-color: $light; 
+                        transition: all 0.3s ease;
+                    }
+                    &::before {
+                        top: 10px;                      
+                    }
+                    &:after {
+                        top: -10px;           
+                    }
+                }
+                &_active {
+                    span {
+                        height: 0;
+                        &::before {
+                            top: 0;
+                            left: 0;
+                            transform: rotate(35deg);
+                        }
+                        &::after {
+                            top: 0;
+                            left: 0;
+                            transform: rotate(-35deg);
+                        }
+                    }
+                }    
+            }// burger
+        }// seach__wrap
+        .nav {
+          &__menu {
+                position: fixed;
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                min-height: 100vh;
+                padding-top: 100px;
+                margin: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                transition: all 0.8s ease;
+                z-index: 4;
+                &_active {
+                    left: 0;
+                }
+            }
+            &__item {
+                padding-top: 20px;
+            }
+            &__link {
+               font-size: 20px;  
+            }  
+        }
+    }//header
+    .mountain {
+        min-height: 110vh;
+        background-position: left;
+        &__wrap {
+            min-width: 70%;
+            margin: 10%;
+            max-width: 70vh;
+            overflow: hidden;
+        }
+        &__text {
+            margin-top: 0;
+        }
+    }// mountain
+
+}
+
+@media (max-width: 576px) {
+    .title_first {
+        font-size: 40px;
+    }
+    .title_second {
+        font-size: 24px;
+    }
+    .header {
+        &__wrap {
+            padding-right: 0;
+            padding-left: 20px;
+        }
+        .search-block {
+            .burger {
+                margin-left: 0;
+            }
+        }
+    }// header
+    .hero {
+        min-height: 100vh;
+        &__btn {
+            align-self: center;
+        }
+    }
+    .footer {
+        &__wrap {
+            flex-direction: column;
+        }
+        &-form {
+            width: 220px;
+            &__input {
+                width: 100%;
+            }
+            &__btn {
+                width: 100%;
+                min-height: 42px;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        &__copyright {
+            flex-direction: column;
+        }
+    }
+}
+

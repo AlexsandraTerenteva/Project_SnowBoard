@@ -1,0 +1,20 @@
+.mountain {
+    min-height: 954px;
+    background: url("../img/about-bg.jpg") center (center/cover) no-repeat;
+    color: $light;
+    display: flex;
+    align-items: center;
+    &__wrap {
+        max-width: 40%;
+        max-height: 600px;
+        margin-left: 15%;
+    }
+    .copyright {
+        font-size: 24px;
+    }
+    &__text {
+        margin-top: 44px;
+        line-height: 2;
+        font-size: 15px;
+    }
+}

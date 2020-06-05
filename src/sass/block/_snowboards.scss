@@ -1,0 +1,14 @@
+.snowboards {
+    min-height: 1121px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .title-block { 
+        margin-top: 158px;
+        width: 100%;
+        .subtitle {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.features {
+    min-height: 649px;
+    padding: 120px 0;
+    text-align: center;
+    background-color: #e8e8e8;
+    &__cards {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .card {
+        max-width: 221px;
+        text-align: left;
+        margin: 10px;
+        &__img {
+            width: 221px;
+            height:  162px; 
+            img {
+                height: 100%;
+                width: 100%; 
+            }
+        }
+        &__desc {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}
